@@ -4,3 +4,12 @@
 @tailwind utilities;
 
 /* Customize your global styles here */
+
+.carousel-slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  overflow: hidden; /* Ensures content stays within bounds */
+}
