@@ -7,13 +7,18 @@ import AnimationsCard from "../components/AnimationsCard";
 import VFXCard from "@/components/vfxCard";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import NavBar from "@/components/NavBar";
-import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   const videographyCard = useRef(null);
   const animationsCard = useRef(null);
   const vfxCard = useRef(null);
   const contactForm = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="text-white">
