@@ -1,5 +1,7 @@
 import "./globals.css";
 import ParticlesBackground from "../components/ParticlesBackground";
+import Navbar from "@/components/NavBar";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Das Bros Portfolio",
@@ -17,10 +19,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <Navbar />
         <div className="black-background"></div>{" "}
         {/* Background behind particles */}
         <ParticlesBackground /> {/* Particles effect */}
         {children} {/* Main content */}
+        <ContactForm />
       </body>
     </html>
   );

@@ -6,19 +6,24 @@ import VideographyCard from "../components/videographyCard";
 import AnimationsCard from "../components/AnimationsCard";
 import VFXCard from "@/components/vfxCard";
 import ParticlesBackground from "@/components/ParticlesBackground";
+import NavBar from "@/components/NavBar";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   const videographyCard = useRef(null);
   const animationsCard = useRef(null);
   const vfxCard = useRef(null);
-
-  const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
+  const contactForm = useRef(null);
 
   return (
     <div className="text-white">
       <ParticlesBackground />
+      <NavBar
+        videographyCard={videographyCard}
+        animationsCard={animationsCard}
+        vfxCard={vfxCard}
+        contactForm={contactForm}
+      />
       {/* Logo and Navigation */}
       <div className="h-screen flex flex-col items-center justify-center">
         {/* Das Bros Logo */}
