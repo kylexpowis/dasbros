@@ -43,30 +43,44 @@ export default function Home() {
 
         {/* Buttons */}
         <motion.div
-          className="space-y-4"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-        >
-          <button
-            onClick={() => scrollToSection(videographyCard)}
-            className="text-lg font-medium hover:underline"
-          >
-            Videography
-          </button>
-          <button
-            onClick={() => scrollToSection(animationsCard)}
-            className="text-lg font-medium hover:underline"
-          >
-            Animations
-          </button>
-          <button
-            onClick={() => scrollToSection(vfxCard)}
-            className="text-lg font-medium hover:underline"
-          >
-            VFX
-          </button>
-        </motion.div>
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+>
+  <button
+    onClick={() => scrollToSection(videographyCard)}
+    className="text-lg font-medium hover:underline"
+  >
+    Videography
+  </button>
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut", delay: 0.7 }}
+>
+  <button
+    onClick={() => scrollToSection(animationsCard)}
+    className="text-lg font-medium hover:underline"
+  >
+    Animations
+  </button>
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut", delay: 0.9 }}
+>
+  <button
+    onClick={() => scrollToSection(vfxCard)}
+    className="text-lg font-medium hover:underline"
+  >
+    VFX
+  </button>
+</motion.div>
+
       </div>
 
       {/* Sections */}
