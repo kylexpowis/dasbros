@@ -9,7 +9,7 @@ export default function ContactCard() {
   return (
     <div
       ref={contactCard}
-      className="h-screen flex flex-col items-center justify-center bg-black text-white p-8"
+      className="flex-col items-center justify-center bg-black text-white p-20"
     >
       <ContactForm />
     </div>
