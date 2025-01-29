@@ -43,3 +43,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 200; /* This is the Extra Light 200 weight */
 }
+
+.black-background {
+  background-color: black;
+}
