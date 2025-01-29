@@ -7,6 +7,7 @@ import AnimationsCard from "../components/AnimationsCard";
 import VFXCard from "@/components/vfxCard";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import NavBar from "@/components/NavBar";
+import ContactCard from "@/components/ContactCard";
 
 export default function Home() {
   const videographyCard = useRef(null);
@@ -102,6 +103,9 @@ export default function Home() {
       </div>
       <div ref={vfxCard}>
         <VFXCard />
+      </div>
+      <div>
+        <ContactCard />
       </div>
     </div>
   );
