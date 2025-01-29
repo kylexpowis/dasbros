@@ -19,16 +19,33 @@ export default function Home() {
     <div className="bg-black text-white">
       {/* Logo and Navigation */}
       <div className="h-screen flex flex-col items-center justify-center">
+        {/* Das Bros Logo */}
         <motion.img
           src="/DasBrosLogo.png"
           alt="Logo"
           className="w-32 h-auto mb-6"
-          initial={{ opacity: 0, y: -50 }} // Start off-screen above
-          animate={{ opacity: 1, y: 0 }} // Fade in and move down
-          transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
         />
-        <div className="text-4xl font-bold mb-6">Das Bros</div>
-        <div className="space-y-4">
+
+        {/* Das Bros Text */}
+        <motion.div
+          className="text-4xl font-bold mb-6"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+        >
+          Das Bros
+        </motion.div>
+
+        {/* Buttons */}
+        <motion.div
+          className="space-y-4"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+        >
           <button
             onClick={() => scrollToSection(videographyCard)}
             className="text-lg font-medium hover:underline"
@@ -47,7 +64,7 @@ export default function Home() {
           >
             VFX
           </button>
-        </div>
+        </motion.div>
       </div>
 
       {/* Sections */}
