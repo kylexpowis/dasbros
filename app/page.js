@@ -1,10 +1,10 @@
 "use client";
 
 import { useRef } from "react";
-import VideographyCard from "../components/VideographyCard";
+import { motion } from "framer-motion";
+import VideographyCard from "../components/videographyCard";
 import AnimationsCard from "../components/AnimationsCard";
 import VFXCard from "@/components/vfxCard";
-import { DasBrosLogo } from "../public/DasBrosLogo.png";
 
 export default function Home() {
   const videographyCard = useRef(null);
@@ -19,7 +19,14 @@ export default function Home() {
     <div className="bg-black text-white">
       {/* Logo and Navigation */}
       <div className="h-screen flex flex-col items-center justify-center">
-        <img src="/DasBrosLogo.png" alt="Logo" className="w-32 h-auto mb-6" />
+        <motion.img
+          src="/DasBrosLogo.png"
+          alt="Logo"
+          className="w-32 h-auto mb-6"
+          initial={{ opacity: 0, y: -50 }} // Start off-screen above
+          animate={{ opacity: 1, y: 0 }} // Fade in and move down
+          transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
+        />
         <div className="text-4xl font-bold mb-6">Das Bros</div>
         <div className="space-y-4">
           <button
