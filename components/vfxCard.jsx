@@ -9,7 +9,7 @@ export default function VFXCard() {
   return (
     <div
       ref={vfxCard}
-      className="h-screen flex flex-col items-center justify-center bg-gray-600"
+      className="h-screen flex flex-col items-center justify-center"
     >
       <h2 className="text-3xl font-bold mb-4">VFX</h2>
       <VFXCarousel />

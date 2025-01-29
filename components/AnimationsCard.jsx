@@ -9,7 +9,7 @@ export default function AnimationsCard() {
   return (
     <div
       ref={animationsCard}
-      className="h-screen flex flex-col items-center justify-center bg-gray-700"
+      className="h-screen flex flex-col items-center justify-center"
     >
       <h2 className="text-3xl font-bold mb-4">Animations</h2>
       <AnimationsCarousel />
