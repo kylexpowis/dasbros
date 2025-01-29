@@ -33,3 +33,13 @@
   background-color: black;
   z-index: -2; /* Moves the black background behind everything */
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Optional: If you want to apply it to a specific element */
+.your-class-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200; /* This is the Extra Light 200 weight */
+}
