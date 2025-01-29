@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import VFXCarousel from "../components/vfxCarousel"; // Import VFXCarousel component
+import VFXCarousel from "./vfxCarousel"; // Import VFXCarousel component
 
 export default function VFXCard() {
   const vfxCard = useRef(null);

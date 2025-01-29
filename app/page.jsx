@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import VideographyCard from "../components/videographyCard";
 import AnimationsCard from "../components/AnimationsCard";
 import VFXCard from "@/components/vfxCard";
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 export default function Home() {
   const videographyCard = useRef(null);
@@ -16,7 +17,8 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-black text-white">
+    <div className="text-white">
+      <ParticlesBackground />
       {/* Logo and Navigation */}
       <div className="h-screen flex flex-col items-center justify-center">
         {/* Das Bros Logo */}
