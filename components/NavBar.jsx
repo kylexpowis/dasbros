@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Navbar({
   videographyCard,
@@ -28,7 +29,9 @@ export default function Navbar({
       <nav className="bg-black text-white p-8">
         <div className="flex justify-between items-center">
           {/* Logo or title */}
-          <div className="text-1xl font-bold">DasBros.co.uk</div>
+          <Link href="/" className="hover:text-yellow-400">
+            DasBros.co.uk
+          </Link>
           {/* Hamburger Icon */}
           <button onClick={toggleDrawer} className="block z-50">
             <span className="block w-6 h-0.5 bg-white mb-1"></span>
@@ -52,7 +55,7 @@ export default function Navbar({
         <div className="space-y-6 flex flex-col items-start w-full">
           {/* Videography Link */}
           <button
-            className="text-xl py-2 px-4 w-full text-left"
+            className="text-xl py-2 px-4 w-full text-left hover:text-yellow-400"
             onClick={() => scrollToSection(videographyCard)} // Scroll to Videography
           >
             Videography
@@ -60,7 +63,7 @@ export default function Navbar({
 
           {/* Animations Link */}
           <button
-            className="text-xl py-2 px-4 w-full text-left"
+            className="text-xl py-2 px-4 w-full text-left hover:text-yellow-400"
             onClick={() => scrollToSection(animationsCard)} // Scroll to Animations
           >
             Animations
@@ -68,7 +71,7 @@ export default function Navbar({
 
           {/* VFX Link */}
           <button
-            className="text-xl py-2 px-4 w-full text-left"
+            className="text-xl py-2 px-4 w-full text-left hover:text-yellow-400"
             onClick={() => scrollToSection(vfxCard)} // Scroll to VFX
           >
             VFX
@@ -79,7 +82,7 @@ export default function Navbar({
             href="https://www.instagram.com/officialdasbros"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xl py-2 px-4 w-full text-left"
+            className="text-xl py-2 px-4 w-full text-left hover:text-yellow-400"
           >
             Instagram
           </a>
@@ -87,7 +90,7 @@ export default function Navbar({
           {/* Contact Link inside the Drawer */}
           <a
             href="#contact"
-            className="text-xl py-2 px-4 w-full text-left"
+            className="text-xl py-2 px-4 w-full text-left hover:text-yellow-400"
             onClick={() => scrollToSection(contactForm)} // Scroll to Contact Form
           >
             Contact

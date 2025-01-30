@@ -61,7 +61,7 @@ export default function Home() {
         >
           <button
             onClick={() => scrollToSection(videographyCard)}
-            className="text-lg font-medium hover:underline"
+            className="text-lg font-medium hover:text-yellow-400"
           >
             Videography
           </button>
@@ -74,7 +74,7 @@ export default function Home() {
         >
           <button
             onClick={() => scrollToSection(animationsCard)}
-            className="text-lg font-medium hover:underline"
+            className="text-lg font-medium hover:text-yellow-400"
           >
             Animations
           </button>
@@ -87,7 +87,7 @@ export default function Home() {
         >
           <button
             onClick={() => scrollToSection(vfxCard)}
-            className="text-lg font-medium hover:underline"
+            className="text-lg font-medium hover:text-yellow-400"
           >
             VFX
           </button>
