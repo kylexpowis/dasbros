@@ -25,12 +25,12 @@ export default function Navbar({
   return (
     <div className="relative">
       {/* Navbar */}
-      <nav className=" bg-black text-white p-8">
+      <nav className="bg-black text-white p-8">
         <div className="flex justify-between items-center">
           {/* Logo or title */}
           <div className="text-1xl font-bold">DasBros.co.uk</div>
           {/* Hamburger Icon */}
-          <button onClick={toggleDrawer} className="">
+          <button onClick={toggleDrawer} className="block z-50">
             <span className="block w-6 h-0.5 bg-white mb-1"></span>
             <span className="block w-6 h-0.5 bg-white mb-1"></span>
             <span className="block w-6 h-0.5 bg-white mb-1"></span>
@@ -76,7 +76,7 @@ export default function Navbar({
 
           {/* Instagram Link */}
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/officialdasbros"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl py-2 px-4 w-full text-left"
