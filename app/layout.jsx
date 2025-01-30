@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Navbar />
         <div className="black-background"></div>{" "}
         {/* Background behind particles */}
         <ParticlesBackground /> {/* Particles effect */}

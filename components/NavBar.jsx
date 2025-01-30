@@ -25,12 +25,12 @@ export default function Navbar({
   return (
     <div className="relative">
       {/* Navbar */}
-      <nav className="fixed w-full top-0 left-0 bg-black text-white p-4 z-50">
+      <nav className=" bg-black text-white p-8">
         <div className="flex justify-between items-center">
           {/* Logo or title */}
           <div className="text-1xl font-bold">DasBros.co.uk</div>
           {/* Hamburger Icon */}
-          <button onClick={toggleDrawer}>
+          <button onClick={toggleDrawer} className="">
             <span className="block w-6 h-0.5 bg-white mb-1"></span>
             <span className="block w-6 h-0.5 bg-white mb-1"></span>
             <span className="block w-6 h-0.5 bg-white mb-1"></span>
@@ -41,15 +41,15 @@ export default function Navbar({
 
       {/* Drawer */}
       <motion.div
-        className={`fixed top-0 right-0 h-full w-64 bg-black text-white p-4 z-40 ${
+        className={`fixed top-0 right-0 h-full w-64 bg-black text-white p-4 transform ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         }`}
         initial={{ x: "100%" }}
         animate={{ x: drawerOpen ? 0 : "100%" }}
         transition={{ type: "spring", stiffness: 300 }}
-        style={{ marginTop: "64px" }} // Ensure the drawer starts below the navbar (adjust based on navbar height)
+        style={{ marginTop: "64px", maxWidth: "80vw" }} // Ensures it's never too wide for small screens
       >
-        <div className="space-y-6 flex flex-col items-start">
+        <div className="space-y-6 flex flex-col items-start w-full">
           {/* Videography Link */}
           <button
             className="text-xl py-2 px-4 w-full text-left"
