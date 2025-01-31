@@ -1,6 +1,5 @@
 import "./globals.css";
 import ParticlesBackground from "../components/ParticlesBackground";
-import Navbar from "@/components/NavBar";
 
 export const metadata = {
   title: "Das Bros Portfolio",

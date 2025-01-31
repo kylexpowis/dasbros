@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   return (
-    <div className="text-white">
+    <div className="text-white max-w-screen overflow-hidden">
       <ParticlesBackground />
       <NavBar
         videographyCard={videographyCard}
