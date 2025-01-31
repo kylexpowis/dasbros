@@ -26,7 +26,7 @@ export default function Navbar({
   return (
     <div className="relative">
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full bg-black text-white p-8 z-50">
+      <nav className="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md text-white p-8 z-50">
         <div className="flex justify-between items-center">
           {/* Logo or title */}
           <Link href="/" className="hover:text-yellow-400">
