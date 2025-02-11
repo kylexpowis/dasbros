@@ -57,6 +57,10 @@ export default function VideoCarousel() {
 
   const [playing, setPlaying] = useState(null);
 
+  // Keep track of the current slide index
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Handler to play the video
   const handlePlay = (index) => {
     setPlaying(index);
   };
@@ -70,6 +74,7 @@ export default function VideoCarousel() {
         navigation={true}
         className="mySwiper"
         modules={[EffectCards, Navigation]}
+        onSlideChange={({ realIndex }) => setCurrentIndex(realIndex)} // Update the index on slide change
       >
         {videos.map((video, index) => (
           <SwiperSlide key={index}>
@@ -87,7 +92,9 @@ export default function VideoCarousel() {
                 </video>
               ) : (
                 <div
-                  className="relative w-full h-full bg-black bg-opacity-60 rounded-xl flex items-center justify-center cursor-pointer group-hover:opacity-80 transition-opacity"
+                  className={`relative w-full h-full bg-black bg-opacity-60 rounded-xl flex items-center justify-center cursor-pointer group-hover:opacity-80 transition-opacity ${
+                    currentIndex === index ? "opacity-100" : "opacity-0"
+                  }`}
                   onClick={() => handlePlay(index)}
                 >
                   <Play className="w-16 h-16 text-white opacity-80 transition-opacity group-hover:opacity-100" />
