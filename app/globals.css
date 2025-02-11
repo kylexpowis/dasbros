@@ -102,3 +102,8 @@ video {
 .swiper-slide:nth-child(even) .carousel-slide-content {
   animation-delay: 0.5s;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
