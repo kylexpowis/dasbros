@@ -1,3 +1,4 @@
+"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -86,7 +87,7 @@ export default function VideoCarousel() {
                 </video>
               ) : (
                 <div
-                  className="relative w-full h-full bg-black bg-opacity-30 rounded-xl flex items-center justify-center cursor-pointer group-hover:opacity-80 transition-opacity"
+                  className="relative w-full h-full bg-black bg-opacity-60 rounded-xl flex items-center justify-center cursor-pointer group-hover:opacity-80 transition-opacity"
                   onClick={() => handlePlay(index)}
                 >
                   <Play className="w-16 h-16 text-white opacity-80 transition-opacity group-hover:opacity-100" />
