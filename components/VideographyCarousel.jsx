@@ -53,6 +53,14 @@ export default function VideoCarousel() {
       title: "Skitzo - Wear The Grit",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/SKITZO+-+WEAR+THE+GRIT+-+DIR+FINAL.mp4",
     },
+    {
+      title: "July 7 - Don't move too fast",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/July+7+-+Don't+Move+Too+Fast.mp4",
+    },
+    {
+      title: "July 7 - Just Imagine",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/JULY+7+JUST+IMAGINE+complete+video+.mp4",
+    },
   ];
 
   const [playing, setPlaying] = useState(null);

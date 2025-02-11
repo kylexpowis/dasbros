@@ -54,7 +54,7 @@ export default function Home() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           style={{ fontFamily: "Poppins", fontWeight: "200" }}
         >
-          Das Bros
+          DASBROS
         </motion.div>
 
         {/* Buttons */}
@@ -93,7 +93,7 @@ export default function Home() {
             onClick={() => scrollToSection(vfxCard)}
             className="text-lg font-medium hover:text-yellow-400"
           >
-            VFX
+            Graphic Posters
           </button>
         </motion.div>
       </div>
