@@ -20,7 +20,7 @@ export default function VideoCarousel() {
         <SwiperSlide>
           <div className="carousel-slide-content">
             <h2>FM Party - Dont Be Late</h2>
-            <video controls width="10%">
+            <video controls width="100%">
               <source
                 src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+-+DONT+BE+LATE+COMPLETE+2.mp4"
                 type="video/mp4"
