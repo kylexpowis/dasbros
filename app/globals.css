@@ -5,15 +5,6 @@
 
 /* Customize your global styles here */
 
-.carousel-slide-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  overflow: hidden; /* Ensures content stays within bounds */
-}
-
 #tsparticles {
   position: fixed;
   width: 100%;
@@ -48,3 +39,25 @@ body {
   background-color: black;
 }
 
+.carousel-container {
+  max-width: 70%; /* Ensure it doesn't overflow the container */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.mySwiper {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Adjust height as needed */
+}
+
+.carousel-slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+video {
+  max-width: 100%; /* Prevent video from overflowing */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 500px; /* You can adjust this as per your design */
+}

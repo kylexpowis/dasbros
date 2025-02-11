@@ -9,9 +9,11 @@ export default function VideoCard() {
   return (
     <div
       ref={videographyCard}
-      className="h-screen flex flex-col items-center justify-center"
+      className="h-screen flex flex-col items-center justify-center px-6 sm:px-12"
     >
-      <h2 className="text-3xl font-bold text-center mb-4">Videography</h2>
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6">
+        Videography
+      </h2>
       <VideographyCarousel />
     </div>
   );
