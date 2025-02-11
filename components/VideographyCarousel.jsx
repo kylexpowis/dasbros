@@ -1,143 +1,100 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { EffectCards, Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/effect-cards";
 import "swiper/css/navigation";
+import { Play } from "lucide-react";
+import { useState } from "react";
 
 export default function VideoCarousel() {
+  const videos = [
+    {
+      title: "FM Party - Dont Be Late",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+-+DONT+BE+LATE+COMPLETE+2.mp4",
+    },
+    {
+      title: "FM Party - The Link Up",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/final+fm+party+the+link+up.mp4",
+    },
+    {
+      title: "GEEKFILES",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/DASBROS+GEEKFILES+COMPETITION.mp4",
+    },
+    {
+      title: "FM Party - The Drop Off",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+3+-+THE+DROP+OFF.mp4",
+    },
+    {
+      title: "FM Party Ad",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+AD+4+COMPLETE+FINAL.mp4",
+    },
+    {
+      title: "FM Party Ad 2",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+ADVERT+COMPLETE.mp4",
+    },
+    {
+      title: "July 7 - You Like It",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/July+7++-+You+Like+It+Master+(COMPLETE).mp4",
+    },
+    {
+      title: "Ken Carson",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/KEN+CARSON+complete.mp4",
+    },
+    {
+      title: "Sainte - Leeds Fest 2023",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/LEEDS+FESTIVAL+SAINTE+2023.mp4",
+    },
+    {
+      title: "Meekz - Leeds Fest 2023",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/MEEKZ+Leeds+Festival.mp4",
+    },
+    {
+      title: "Skitzo - Wear The Grit",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/SKITZO+-+WEAR+THE+GRIT+-+DIR+FINAL.mp4",
+    },
+  ];
+
+  const [playing, setPlaying] = useState(null);
+
+  const handlePlay = (index) => {
+    setPlaying(index);
+  };
+
   return (
     <div className="carousel-container">
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
       <Swiper
-        spaceBetween={50} // Space between slides
-        slidesPerView={1} // Number of slides visible at once
-        navigation={true} // Enable navigation buttons
-        pagination={{ clickable: true }} // Pagination dots (optional)
-        loop={true} // Loop the slides
+        effect="cards"
+        grabCursor={true}
+        loop={true}
+        navigation={true}
         className="mySwiper"
-        modules={[Pagination, Navigation]}
+        modules={[EffectCards, Navigation]}
       >
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>FM Party - Dont Be Late</h2>
-            <video controls width="100%">
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+-+DONT+BE+LATE+COMPLETE+2.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>FM Party - The Link Up</h2>
-            <video>
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/final+fm+party+the+link+up.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>GEEKFILES</h2>
-            <video controls width="100%">
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/DASBROS+GEEKFILES+COMPETITION.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>FM Party - The Drop Off</h2>
-            <video controls width="100%">
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+3+-+THE+DROP+OFF.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>FM Party Ad</h2>
-            <video controls width="100%">
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+AD+4+COMPLETE+FINAL.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>FM Party Ad 2</h2>
-            <video controls width="100%">
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+ADVERT+COMPLETE.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>July 7 - You like it </h2>
-            <video controls width="100%">
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/July+7++-+You+Like+It+Master+(COMPLETE).mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>Ken Carson</h2>
-            <video controls width="100%">
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/KEN+CARSON+complete.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>Sainte - Leeds Fest 2023</h2>
-            <video controls width="100%">
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/LEEDS+FESTIVAL+SAINTE+2023.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>Meekz - Leeds Fest 2023</h2>
-            <video controls width="100%">
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/MEEKZ+Leeds+Festival.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carousel-slide-content">
-            <h2>Skitzo - Wear The Grit</h2>
-            <video controls width="100%">
-              <source
-                src="https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/SKITZO+-+WEAR+THE+GRIT+-+DIR+FINAL.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </SwiperSlide>
+        {videos.map((video, index) => (
+          <SwiperSlide key={index}>
+            <div className="relative group w-full h-80 flex items-center justify-center">
+              <h2 className="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-3 py-1 rounded-md text-sm">
+                {video.title}
+              </h2>
+              {playing === index ? (
+                <video
+                  className="w-full h-full object-cover rounded-xl"
+                  controls
+                  autoPlay
+                >
+                  <source src={video.src} type="video/mp4" />
+                </video>
+              ) : (
+                <div
+                  className="relative w-full h-full bg-black bg-opacity-30 rounded-xl flex items-center justify-center cursor-pointer group-hover:opacity-80 transition-opacity"
+                  onClick={() => handlePlay(index)}
+                >
+                  <Play className="w-16 h-16 text-white opacity-80 transition-opacity group-hover:opacity-100" />
+                </div>
+              )}
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
