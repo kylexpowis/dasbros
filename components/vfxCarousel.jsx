@@ -13,18 +13,14 @@ export default function VFXCarousel() {
       >
         <SwiperSlide>
           <div className="carousel-slide-content">
-            <h2>VFX Content 1</h2>
-            <a href="#" className="carousel-link">
-              https://example.com/vfx1.mp4
-            </a>
+            <h2></h2>
+            <a href="#" className="carousel-link"></a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="carousel-slide-content">
-            <h2>VFX Content 2</h2>
-            <a href="#" className="carousel-link">
-              https://example.com/vfx2.mp4
-            </a>
+            <h2></h2>
+            <a href="#" className="carousel-link"></a>
           </div>
         </SwiperSlide>
         {/* Add more slides as needed */}
