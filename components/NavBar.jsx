@@ -74,7 +74,7 @@ export default function Navbar({
             className="text-xl py-2 px-4 w-full text-left hover:text-yellow-400"
             onClick={() => scrollToSection(vfxCard)} // Scroll to VFX
           >
-            VFX
+            Graphic Posters
           </button>
 
           {/* Instagram Link */}
