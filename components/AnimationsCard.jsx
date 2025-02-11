@@ -11,7 +11,9 @@ export default function AnimationsCard() {
       ref={animationsCard}
       className="h-screen flex flex-col items-center justify-center"
     >
-      <h2 className="text-3xl font-bold mb-4">Animations</h2>
+      <h2 className="text-2xl sm:text-2xl font-bold text-center mb-6">
+        Animations
+      </h2>
       <AnimationsCarousel />
     </div>
   );

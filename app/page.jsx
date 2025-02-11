@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import VideographyCard from "../components/videographyCard";
 import AnimationsCard from "../components/AnimationsCard";
@@ -20,6 +20,10 @@ export default function Home() {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="text-white max-w-screen overflow-hidden">

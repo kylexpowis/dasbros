@@ -11,7 +11,7 @@ export default function VideoCard() {
       ref={videographyCard}
       className="h-screen flex flex-col items-center justify-center px-6 sm:px-12"
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6">
+      <h2 className="text-2xl sm:text-2xl font-bold text-center mb-6">
         Videography
       </h2>
       <VideographyCarousel />
