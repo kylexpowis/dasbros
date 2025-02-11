@@ -64,11 +64,8 @@ export default function VideoCarousel() {
   ];
 
   const [playing, setPlaying] = useState(null);
-
-  // Keep track of the current slide index
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Handler to play the video
   const handlePlay = (index) => {
     setPlaying(index);
   };

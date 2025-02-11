@@ -9,14 +9,25 @@ import "swiper/css/pagination";
 export default function AnimationsCarousel() {
   const animations = [
     {
-      title: "TBC",
-      src: "https://example.com/animation1.mp4",
+      title: "AYRTN",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/AYRTN.mp4",
     },
     {
-      title: "TBC",
-      src: "https://example.com/animation2.mp4",
+      title: "DJ Jack Wood",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/DJ+JACK+WOOD+animation.mp4",
     },
-    // Add more animations as needed
+    {
+      title: "Final FM Party Animation",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FINAL+FM+PARTY+ANIMATION+.mp4",
+    },
+    {
+      title: "Peak of the week",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/Peak+Of+The+Week+FINAL+0000-0280.mp4",
+    },
+    {
+      title: "Remo",
+      src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/remo+updated.mp4",
+    },
   ];
 
   const [playing, setPlaying] = useState(null);

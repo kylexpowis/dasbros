@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import AnimationsCarousel from "./AnimationsCarousel"; // Import AnimationsCarousel component
+import AnimationsCarousel from "./AnimationsCarousel";
 
 export default function AnimationsCard() {
   const animationsCard = useRef(null);

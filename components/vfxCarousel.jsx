@@ -16,7 +16,7 @@ export default function VFXCarousel() {
       title: "TBC",
       src: "https://example.com/vfx2.mp4",
     },
-    // Add more VFX videos as needed
+    // Add more gfx videos as needed
   ];
 
   const [playing, setPlaying] = useState(null);
