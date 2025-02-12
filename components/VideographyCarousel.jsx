@@ -110,9 +110,11 @@ export default function VideoCarousel() {
         {videos.map((video, index) => (
           <SwiperSlide key={index}>
             <div className="relative group w-full h-80 flex items-center justify-center">
-              <h2 className="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-3 py-1 rounded-md text-sm">
-                {video.title}
-              </h2>
+              {index === currentIndex && (
+                <h2 className="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-3 py-1 rounded-md text-sm">
+                  {video.title}
+                </h2>
+              )}
 
               {playing === index ? (
                 <video
