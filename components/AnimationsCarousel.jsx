@@ -78,7 +78,7 @@ export default function AnimationsCarousel() {
                 <img
                   src={animation.thumbnail}
                   alt={animation.title}
-                  className="w-full h-full object-cover rounded-xl cursor-pointer"
+                  className="h-full w-auto max-w-full object-contain rounded-xl cursor-pointer"
                   onClick={() => handlePlay(index)}
                 />
               )}
