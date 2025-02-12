@@ -10,43 +10,43 @@ import { useState } from "react";
 export default function VideoCarousel() {
   const videos = [
     {
-      title: "FM Party - Dont Be Late",
+      title: "ADVERT: FM Party - Dont Be Late",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+-+DONT+BE+LATE+COMPLETE+2.mp4",
       thumbnail:
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/fmpartydontbelatethumbnail.png",
     },
     {
-      title: "FM Party - The Link Up",
+      title: "ADVERT: FM Party - The Link Up",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/final+fm+party+the+link+up.mp4",
       thumbnail:
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/fmpartythelinkupthumbnail.png",
     },
     {
-      title: "GEEKFILES",
+      title: "ADVERT: GEEKFILES",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/DASBROS+GEEKFILES+COMPETITION.mp4",
       thumbnail:
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/geekfilesthumbnail.png",
     },
     {
-      title: "FM Party - The Drop Off",
+      title: "ADVERT: FM Party - The Drop Off",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+3+-+THE+DROP+OFF.mp4",
       thumbnail:
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/fmpartythedropoffthumbnail.png",
     },
     {
-      title: "FM Party Ad",
+      title: "ADVERT: FM Party Ad",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+AD+4+COMPLETE+FINAL.mp4",
       thumbnail:
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/fmpartyad4thumbnail.png",
     },
     {
-      title: "FM Party Ad 2",
+      title: "ADVERT: FM Party Ad 2",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+ADVERT+COMPLETE.mp4",
       thumbnail:
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/fmpartyadcompletethumbnail.png",
     },
     {
-      title: "July 7 - You Like It",
+      title: "MUSIC VIDEO: July 7 - You Like It",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/July+7++-+You+Like+It+Master+(COMPLETE).mp4",
       thumbnail:
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/july7youlikeitthumbnail.png",
@@ -70,19 +70,19 @@ export default function VideoCarousel() {
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/meekzleedsfestthumbnail.png",
     },
     {
-      title: "Skitzo - Wear The Grit",
+      title: "ADVERT: Skitzo - Wear The Grit",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/SKITZO+-+WEAR+THE+GRIT+-+DIR+FINAL.mp4",
       thumbnail:
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/skitzowearthegritthumbnail.png",
     },
     {
-      title: "July 7 - Don't move too fast",
+      title: "MUSIC VIDEO: July 7 - Don't move too fast",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/July+7+-+Don't+Move+Too+Fast.mp4",
       thumbnail:
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/july7dontmovetoofast.png",
     },
     {
-      title: "July 7 - Just Imagine",
+      title: "MUSIC VIDEO: July 7 - Just Imagine",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/JULY+7+JUST+IMAGINE+complete+video+.mp4",
       thumbnail:
         "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/july7justimaginethumbnail.png",
