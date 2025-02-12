@@ -14,7 +14,7 @@ export default function ContactForm() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full p-3 bg-gray-800 text-white rounded text-lg" // Increased padding and text size
+                  className="w-full p-3 bg-[#111111] text-white rounded text-lg"
                   placeholder="Your Name"
                 />
               </div>
@@ -26,7 +26,7 @@ export default function ContactForm() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full p-3 bg-gray-800 text-white rounded text-lg"
+                  className="w-full p-3 bg-[#111111] text-white rounded text-lg"
                   placeholder="Your Email"
                 />
               </div>
@@ -37,14 +37,14 @@ export default function ContactForm() {
                 <textarea
                   id="message"
                   name="message"
-                  className="w-full p-3 bg-gray-800 text-white rounded text-lg"
+                  className="w-full p-3 bg-[#111111] text-white rounded text-lg"
                   rows="5"
                   placeholder="Your Message"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full p-3 bg-darkGreen text-white font-bold rounded mt-4 text-lg"
+                className="w-full p-3 bg-yellow-400 text-black font-bold rounded mt-4 text-lg"
               >
                 Send Message
               </button>
