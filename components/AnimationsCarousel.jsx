@@ -1,3 +1,4 @@
+"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards, Navigation } from "swiper/modules";
 import { useState } from "react";
@@ -74,16 +75,12 @@ export default function AnimationsCarousel() {
                   <source src={animation.src} type="video/mp4" />
                 </video>
               ) : (
-                <div
-                  className="relative w-full h-full bg-black bg-opacity-60 rounded-xl flex items-center justify-center cursor-pointer group-hover:opacity-80 transition-opacity"
+                <img
+                  src={animation.thumbnail}
+                  alt={animation.title}
+                  className="w-full h-full object-cover rounded-xl cursor-pointer"
                   onClick={() => handlePlay(index)}
-                >
-                  <img
-                    src={animation.thumbnail}
-                    alt={animation.title}
-                    className="absolute inset-0 w-full h-full object-cover rounded-xl"
-                  />
-                </div>
+                />
               )}
             </div>
           </SwiperSlide>
