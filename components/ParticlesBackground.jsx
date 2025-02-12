@@ -42,7 +42,7 @@ export default function ParticlesBackground() {
             outModes: "out",
           },
           opacity: {
-            value: 0.4, // Soft glow
+            value: 0.5, // Soft glow
             random: true,
             anim: {
               enable: true,
