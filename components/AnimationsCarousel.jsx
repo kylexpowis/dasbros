@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards, Navigation } from "swiper/modules";
-import { Play } from "lucide-react";
 import { useState } from "react";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -84,7 +83,6 @@ export default function AnimationsCarousel() {
                     alt={animation.title}
                     className="absolute inset-0 w-full h-full object-cover rounded-xl"
                   />
-                  <Play className="w-16 h-16 text-white opacity-80 transition-opacity group-hover:opacity-100" />
                 </div>
               )}
             </div>
