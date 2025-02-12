@@ -31,7 +31,7 @@ export default function VideoCarousel() {
       title: "FM Party - The Drop Off",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+3+-+THE+DROP+OFF.mp4",
       thumbnail:
-        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FM+PARTY+3+-+THE+DROP+OFF.mp4",
+        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/fmpartythedropoffthumbnail.png",
     },
     {
       title: "FM Party Ad",
@@ -73,7 +73,7 @@ export default function VideoCarousel() {
       title: "Skitzo - Wear The Grit",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/SKITZO+-+WEAR+THE+GRIT+-+DIR+FINAL.mp4",
       thumbnail:
-        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/SKITZO+-+WEAR+THE+GRIT+-+DIR+FINAL.mp4",
+        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/skitzowearthegritthumbnail.png",
     },
     {
       title: "July 7 - Don't move too fast",
