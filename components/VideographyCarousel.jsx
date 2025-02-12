@@ -49,7 +49,7 @@ export default function VideoCarousel() {
       title: "July 7 - You Like It",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/July+7++-+You+Like+It+Master+(COMPLETE).mp4",
       thumbnail:
-        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/july7youlikeit.png",
+        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/july7youlikeitthumbnail.png",
     },
     {
       title: "Ken Carson",
