@@ -4,7 +4,6 @@ import { EffectCards, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/navigation";
-import { Play } from "lucide-react";
 import { useState } from "react";
 
 export default function VideoCarousel() {
