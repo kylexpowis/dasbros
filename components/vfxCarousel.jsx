@@ -26,7 +26,7 @@ export default function VFXCarousel() {
       <Swiper
         effect="cards"
         grabCursor={true}
-        loop={true}
+        loop={vfx.length > 5}
         navigation={true}
         className="mySwiper"
         modules={[EffectCards, Navigation]}
