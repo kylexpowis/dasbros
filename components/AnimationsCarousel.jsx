@@ -1,32 +1,37 @@
-"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards, Navigation } from "swiper/modules";
 import { Play } from "lucide-react";
 import { useState } from "react";
 import "swiper/css";
+import "swiper/css/effect-cards";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 export default function AnimationsCarousel() {
   const animations = [
     {
       title: "AYRTN",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/AYRTN.mp4",
+      thumbnail: "", // Add thumbnails later
     },
     {
       title: "DJ Jack Wood",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/DJ+JACK+WOOD+animation.mp4",
+      thumbnail: "",
     },
     {
       title: "Final FM Party Animation",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FINAL+FM+PARTY+ANIMATION+.mp4",
+      thumbnail: "",
     },
     {
       title: "Peak of the week",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/Peak+Of+The+Week+FINAL+0000-0280.mp4",
+      thumbnail: "",
     },
     {
       title: "Remo",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/remo+updated.mp4",
+      thumbnail: "",
     },
   ];
 
@@ -40,23 +45,25 @@ export default function AnimationsCarousel() {
   return (
     <div className="carousel-container">
       <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
+        effect="cards"
+        grabCursor={true}
         loop={true}
+        navigation={true}
         className="mySwiper"
+        modules={[EffectCards, Navigation]}
         onSlideChange={({ realIndex }) => setCurrentIndex(realIndex)}
       >
         {animations.map((animation, index) => (
           <SwiperSlide key={index}>
             <div className="relative group w-full h-80 flex items-center justify-center">
-              <h2 className="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-3 py-1 rounded-md text-sm">
-                {animation.title}
-              </h2>
+              {index === currentIndex && (
+                <h2 className="absolute top-2 left-2 text-white bg-black bg-opacity-50 px-3 py-1 rounded-md text-sm">
+                  {animation.title}
+                </h2>
+              )}
               {playing === index ? (
                 <video
-                  className="w-full h-full object-cover rounded-xl"
+                  className="h-full w-auto max-w-full object-contain rounded-xl"
                   controls
                   autoPlay
                 >
@@ -64,9 +71,7 @@ export default function AnimationsCarousel() {
                 </video>
               ) : (
                 <div
-                  className={`relative w-full h-full bg-black bg-opacity-60 rounded-xl flex items-center justify-center cursor-pointer group-hover:opacity-80 transition-opacity ${
-                    currentIndex === index ? "opacity-100" : "opacity-0"
-                  }`}
+                  className="relative w-full h-full bg-black bg-opacity-60 rounded-xl flex items-center justify-center cursor-pointer group-hover:opacity-80 transition-opacity"
                   onClick={() => handlePlay(index)}
                 >
                   <Play className="w-16 h-16 text-white opacity-80 transition-opacity group-hover:opacity-100" />
