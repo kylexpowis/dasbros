@@ -11,27 +11,32 @@ export default function AnimationsCarousel() {
     {
       title: "AYRTN",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/AYRTN.mp4",
-      thumbnail: "", // Add thumbnails later
+      thumbnail:
+        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/AYRTNthumbnail.png",
     },
     {
       title: "DJ Jack Wood",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/DJ+JACK+WOOD+animation.mp4",
-      thumbnail: "",
+      thumbnail:
+        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/djjackwoodthumbnail.png",
     },
     {
       title: "Final FM Party Animation",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/FINAL+FM+PARTY+ANIMATION+.mp4",
-      thumbnail: "",
+      thumbnail:
+        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/finalfmpartyanimationthumbnail.png",
     },
     {
       title: "Peak of the week",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/Peak+Of+The+Week+FINAL+0000-0280.mp4",
-      thumbnail: "",
+      thumbnail:
+        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/peakoftheweekthumbnail.png",
     },
     {
       title: "Remo",
       src: "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/remo+updated.mp4",
-      thumbnail: "",
+      thumbnail:
+        "https://dasbrosvidepgraphy.s3.eu-north-1.amazonaws.com/remothumbnail.png",
     },
   ];
 
@@ -74,6 +79,11 @@ export default function AnimationsCarousel() {
                   className="relative w-full h-full bg-black bg-opacity-60 rounded-xl flex items-center justify-center cursor-pointer group-hover:opacity-80 transition-opacity"
                   onClick={() => handlePlay(index)}
                 >
+                  <img
+                    src={animation.thumbnail}
+                    alt={animation.title}
+                    className="absolute inset-0 w-full h-full object-cover rounded-xl"
+                  />
                   <Play className="w-16 h-16 text-white opacity-80 transition-opacity group-hover:opacity-100" />
                 </div>
               )}
