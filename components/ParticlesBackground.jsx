@@ -17,7 +17,7 @@ export default function ParticlesBackground() {
         fullScreen: { enable: true, zIndex: -1 }, // Keep behind content
         particles: {
           number: {
-            value: 50, // Number of fireflies
+            value: 80, // Number of fireflies
             density: { enable: true, value_area: 800 },
           },
           shape: {
@@ -42,7 +42,7 @@ export default function ParticlesBackground() {
             outModes: "out",
           },
           opacity: {
-            value: 0.5, // Soft glow
+            value: 0.6, // Soft glow
             random: true,
             anim: {
               enable: true,
