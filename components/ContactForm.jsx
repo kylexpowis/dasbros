@@ -11,6 +11,12 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setMessage("");
 
+    // Debugging: Log form data
+    const formData = new FormData(formRef.current);
+    for (let [key, value] of formData.entries()) {
+      console.log(`${key}: ${value}`);
+    }
+
     emailjs
       .sendForm(
         "service_2moehrs", // Service ID
@@ -19,11 +25,13 @@ export default function ContactForm() {
         "4JELoE4tdH_wgwTUU" // Public Key
       )
       .then(
-        () => {
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
           setMessage("Message sent successfully!");
           formRef.current.reset();
         },
-        () => {
+        (error) => {
+          console.error("FAILED...", error);
           setMessage("Failed to send message. Please try again.");
         }
       )
@@ -38,26 +46,26 @@ export default function ContactForm() {
           <form ref={formRef} onSubmit={sendEmail}>
             <div className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-lg">
+                <label htmlFor="from_name" className="block text-lg">
                   Name
                 </label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
+                  id="from_name"
+                  name="from_name"
                   className="w-full p-3 bg-[#111111] text-white rounded text-lg"
                   placeholder="Your Name"
                   required
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-lg">
+                <label htmlFor="reply_to" className="block text-lg">
                   Email
                 </label>
                 <input
                   type="email"
-                  id="email"
-                  name="email"
+                  id="reply_to"
+                  name="reply_to"
                   className="w-full p-3 bg-[#111111] text-white rounded text-lg"
                   placeholder="Your Email"
                   required
